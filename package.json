@@ -1,8 +1,7 @@
-
 {
   "name": "bot-wa-railway",
   "version": "1.0.0",
-  "description": "Bot WhatsApp untuk Railway",
+  "description": "Bot WhatsApp Railway",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -11,5 +10,8 @@
     "@hapi/boom": "^10.0.0",
     "@whiskeysockets/baileys": "^6.4.0",
     "pino": "^8.0.0"
+  },
+  "engines": {
+    "node": "20.x"
   }
 }

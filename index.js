@@ -15,7 +15,8 @@ async function startSock() {
     sock.ev.on('connection.update', (update) => {
         const { connection, lastDisconnect, qr } = update;
         if (qr) {
-            console.log("Silakan scan QR berikut:\n");
+            console.log("Silakan scan QR berikut:
+");
             console.log(qr);
         }
         if(connection === 'close') {
@@ -38,9 +39,8 @@ async function startSock() {
 
         console.log('Pesan masuk dari:', sender, 'Isi pesan:', text);
 
-        // Balas SEMUA nomor yang kirim pesan 'ping'
         if (text && text.toLowerCase() === 'ping') {
-            await sock.sendMessage(sender, { text: 'pong! Ini balasan dari Bot WA di Railway.' });
+            await sock.sendMessage(sender, { text: 'pong! Ini balasan dari Bot WA Railway.' });
         }
     });
 }

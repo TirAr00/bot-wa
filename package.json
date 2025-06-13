@@ -2,7 +2,7 @@
 {
   "name": "bot-wa-railway",
   "version": "1.0.0",
-  "description": "Bot WhatsApp untuk Railway (Baileys)",
+  "description": "Bot WhatsApp untuk Railway",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
